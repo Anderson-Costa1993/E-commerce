@@ -1,0 +1,96 @@
+
+.product  {
+  font-size: 12px;
+  color: rgb(70, 68, 68);
+  padding: 0.5em;
+  display: flex;
+}
+.product p {
+  font-weight: 600;
+  color: black;
+}
+.container-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.marca {
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
+
+.Product-Data {
+  display: flex;
+  flex-direction: column;
+  margin: 10  px 0;
+  border-bottom: 1px solid rgb(218, 217, 217);
+  padding: 1em 0.5em;
+  line-height: 1.5;
+}
+
+.price-discount {
+  margin-right: 1em;
+  font-size: 1em;
+  color: rgb(48, 47, 47);
+}
+.prices {
+  padding: 0.5em 0.5em;
+}
+.price {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: black;
+}
+.name-discount {
+  font-size: 1em;
+  color: rgb(253, 0, 0);
+
+}
+
+.selecions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 2em 0.5em;
+}
+
+.selecions select {
+  margin-top: 5px;
+}
+.select-colors, .select-sizes {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container-buy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.btn-buy {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  width: 95%;
+  background-color: rgb(15, 126, 89);
+  padding: 0.3em;
+  border: none;
+  text-transform: uppercase;
+}

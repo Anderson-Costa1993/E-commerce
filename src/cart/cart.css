@@ -1,0 +1,201 @@
+.empty-cart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4em 0;
+  line-height: 2;
+}
+
+.empty-cart h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.empty-cart p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.empty-cart a {
+  font-size: 12px;
+  color: rgb(44, 43, 43);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.container-product {
+  display: flex;
+  border: solid 1px rgb(226, 225, 225);
+  padding: 1em;
+  font-size: 12px;
+}
+.image {
+  width: 100%;
+  height: 140px;
+}
+
+.product-information {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 1em;
+}
+
+.container-del {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.marca {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container-quantity-price{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid rgb(224, 222, 222);
+  padding: 0.3em 1em;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0.5em;
+}
+.increase, .descrease, .remove {
+  border: none;
+  background-color: transparent;
+}
+
+.container-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price-discount {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgb(138, 138, 138);
+}
+.price-total {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.replacement {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border: solid 1px rgb(202, 202, 202);
+  margin-top: 2em;
+  background-color: rgb(240, 238, 238);
+}
+
+.descrition {
+  width: 90%;
+  padding: 0 0.5em;
+}
+.title-troca, .title-cupom{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.text-troca, .text-cupom {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.cumpons {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.voucher {
+  border: solid 1px rgb(230, 227, 227);
+}
+.btn-voucher {
+border: none;
+background-color: rgb(128, 128, 128);
+color: aliceblue;
+}
+
+.resumo-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  padding: 0.3em 1em;
+  background-color: rgb(204, 205, 206);
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+
+.sub-itens-quantity, .subtotal-value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: rgb(204, 205, 206);
+}
+
+.total-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(204, 205, 206);
+  padding: 0;
+}
+
+.total-value {
+  font-size: 18px;
+  font-family: 400;
+  color: black;
+}
+
+.btn-buy {
+  padding: 0.8em;
+  width: 100%;
+  border: none;
+  text-align: center;
+  background-color: rgb(0, 143, 131);
+  margin-top: 1em;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-home {
+  padding: 0.8em;
+  width: 100%;
+  border: none;
+  text-align: center;
+  border: solid 1px rgb(0, 143, 131);
+  margin-top: 1em;
+}
+.btn-home a {
+  text-decoration: none;
+  color: rgb(0, 143, 131);;
+  font-weight: 600;
+}
