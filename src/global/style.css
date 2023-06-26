@@ -1,16 +1,23 @@
+:root {
+  --font-oficial: 'Titillium Web', sans-serif;
+  --cor-preto: black;
+  --cor-preto-secundario: #111318;
+  --cor-cinza-claro: #DBDEE6;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 12px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-oficial);
 }
 
 .container-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em;
-  background-color: black;
+  padding: 0.5em 1em;
+  background-color: #111318;
   color: #f3f4f6;
   align-items: center;
 }
@@ -19,17 +26,21 @@ body {
   text-decoration: none;
   margin: 0 auto;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 900;
   padding: 0.5em 0;
   color: #f3f4f6;
+  font-family: var(--font-oficial);
+  text-decoration: none;
 }
-
+.link-home a {
+  text-decoration: none;
+}
 
 .container-input {
   display: flex;
   margin: 2em 0;
   justify-content: center;
-  border: solid 1px rgb(211, 211, 211);
+  border: solid 1px #DBDEE6;
 }
 
 .control-search {
@@ -44,24 +55,6 @@ body {
   outline: none;
   width: 95%;
   padding: 0.5em;
-  ;
-}
-
-.container-filtro {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 0.5em 0;
-}
-
-#btn-filtro,
-#selciona-topic {
-  width: 9.5em;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  box-shadow: rgba(163, 163, 163, 0.35) 0px 5px 15px;
-  border: solid 1px rgb(211, 211, 211);
   ;
 }
 

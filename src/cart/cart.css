@@ -1,3 +1,5 @@
+@import '/src/global/style.css';
+
 .empty-cart {
   width: 100%;
   display: flex;
@@ -102,7 +104,7 @@
 .replacement {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 2em 1em;
   border: solid 1px rgb(202, 202, 202);
   margin-top: 2em;
   background-color: rgb(240, 238, 238);
@@ -114,7 +116,8 @@
 }
 .title-troca, .title-cupom{
   font-weight: 600;
-  margin-bottom: 5px;
+  font-size: 14px;
+  margin: 0;
 }
 .text-troca, .text-cupom {
   font-size: 12px;
@@ -124,29 +127,44 @@
 .cumpons {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 1.5em 1em;
+}
+.title-voucher {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
 }
 .voucher {
-  border: solid 1px rgb(230, 227, 227);
+  border: solid 1px rgb(194, 194, 194);
+  outline: none;
 }
 .btn-voucher {
 border: none;
-background-color: rgb(128, 128, 128);
-color: aliceblue;
+background-color: rgb(155, 155, 155);
+color: rgb(63, 63, 63);
+font-weight: 600;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1em;
 }
 
 .resumo-title {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  padding: 0.3em 1em;
+  padding: 0.3em 0.8em;
   background-color: rgb(204, 205, 206);
+  margin: 0;
 }
 
 .subtotal {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em 1em;
+  padding: 1em 1em;
 }
 
 .sub-itens-quantity, .subtotal-value {
@@ -180,7 +198,8 @@ color: aliceblue;
   width: 100%;
   border: none;
   text-align: center;
-  background-color: rgb(0, 143, 131);
+  background-color: #0D131C;
+  border: 1px solid #9DB2D2;
   margin-top: 1em;
   color: white;
   font-weight: 600;
@@ -191,11 +210,11 @@ color: aliceblue;
   width: 100%;
   border: none;
   text-align: center;
-  border: solid 1px rgb(0, 143, 131);
+  border: 1px solid #9DB2D2;
   margin-top: 1em;
 }
 .btn-home a {
   text-decoration: none;
-  color: rgb(0, 143, 131);;
+  color: #0D131C;
   font-weight: 600;
 }

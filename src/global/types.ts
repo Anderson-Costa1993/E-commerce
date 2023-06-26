@@ -1,7 +1,8 @@
 export type ProductVariant = {
   id: number;
-  model: string;
-  color: string;
+  imagem: string;
+  imagem1: string;
+  imagem2: string;
   size: string;
   price: number;
   discount: number;
@@ -13,14 +14,16 @@ export type ProductVariant = {
 export type Product = {
   id: number;
   name: string;
-  imagem: string;
   marca: string;
+  model: string;
+  color: string;
   variants: ProductVariant[];
 }
 
 export type CartItem = {
   variantId: number;
   model: string;
+  imagem: string;
   quantity: number;
   price: number;
   discount: number,

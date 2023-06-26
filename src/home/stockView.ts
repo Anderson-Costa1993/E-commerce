@@ -1,6 +1,5 @@
 import { Stock } from "../global/stock";
 import { Cart } from "../global/cart";
-
 import { UpdateViewFunction } from "./types";
 
 type StockViewOptions = {
@@ -23,35 +22,38 @@ export function StockView(stockViewOptions: StockViewOptions) {
     });
   }
 
+
     function update() {
       stockViewOptions.stock.products.forEach(product => {
-          product.variants.forEach( variant => {
-          const variantDiscount = stockViewOptions.stock.getProducDiscount(product.id, variant.id);
+        const firstvariant = product.variants[0]
+          const variantDiscount = stockViewOptions.stock.getProducDiscount(product.id, firstvariant.id);
           stockViewOptions.element.innerHTML += `
-          <div class="card" data-productId="${product.id}" data-variantId="${variant.id}">
-          <div class="img-exposicion">
-          <img src="/images/products/${product.imagem}" alt="" class="img-product">
+
+    <div class="card" data-productId="${product.id}" data-variantId="${firstvariant.id}">
+        <div class="img-exposicion">
+          <img src="/images/products/${firstvariant.imagem}" alt="" class="img-product">
         </div>
+
         <span class="marca">${product.marca}</span>
         <div class="dados-product">
           <span class="nome-produto">
-            <p>${ product.name } ${variant.model}</p>
+            <p>${ product.name } ${product.model}</p>
           </span>
         </div>
+
         <div class="precos">
           ${
             variantDiscount ? `
               <div class="container-desconto">
-                <span id="valor-desconto"><s>R$${ variant.price.toFixed(2) }</s></span>
-                <span id="nome-desconto">-${ variant.discountName }</span>
+                <span id="valor-desconto"><s>R$${ firstvariant.price.toFixed(2) }</s></span>
+                <span id="nome-desconto">-${ firstvariant.discountName }</span>
               </div>
             ` : ``
           }
-            <span id="valor-total">R$${stockViewOptions.stock.getTotal(product.id, variant.id)}</span>
-          </div>
-          </div>
+            <span id="valor-total">R$${stockViewOptions.stock.getTotal(product.id, firstvariant.id)}</span>
+        </div>
+    </div>
         `;
-      })
       });
       addEvents();
     }

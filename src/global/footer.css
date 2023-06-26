@@ -1,0 +1,38 @@
+@import '/src/global/style.css';
+
+footer {
+  margin-top: 5em;
+  font-weight: 600;
+  border-top: solid 1px #ABB2C4;
+  font-family: var(--font-oficial);
+}
+
+.icon {
+  text-decoration: none;
+}
+
+.nav-social {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  align-items: center;
+}
+
+.icons-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-apps {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.direitos {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 12px;
+}
+
