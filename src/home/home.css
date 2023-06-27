@@ -85,3 +85,34 @@
 }
 
 
+
+@media screen and (min-width: 1024px) {
+  /* Coloque os estilos desejados para telas ainda maiores aqui */
+  .menu {
+    display: none;
+  }
+  #stock {
+    width: 65%;
+    margin: 2em auto;
+  }
+
+.card {
+  box-sizing: border-box;
+  height: 250px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 2em 0.5em;
+}
+
+.img-exposicion {
+  border: solid 1px rgb(211, 211, 211);
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+}

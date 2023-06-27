@@ -1,6 +1,7 @@
 import { Stock } from "../global/stock";
 import { GalleryView } from "./galleryView";
 import { InfoView } from "./infoView";
+import { Cart } from "../global/cart";
 
 const urlParams = new URLSearchParams(window.location.search);
 
@@ -12,6 +13,7 @@ if (!productId || !variantId) {
 }
 
 const stock = Stock();
+const cart = Cart({stock});
 
 const product = stock.getProduct(productId);
 const variant = stock.getProductVariant(productId, variantId);
@@ -25,6 +27,7 @@ const galleryView = GalleryView({
 
 const infoView = InfoView({
   stock,
+  cart,
   product,
   variant,
   element: document.getElementById("info")!

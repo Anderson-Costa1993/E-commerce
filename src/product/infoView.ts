@@ -4,7 +4,7 @@ import { Cart } from "../global/cart";
 
 type InfoViewOptions = {
   stock: ReturnType<typeof Stock>;
-  cart: ReturnType<typeof Cart>
+  cart: ReturnType<typeof Cart>;
   product: Product;
   variant: ProductVariant;
   element: HTMLElement;

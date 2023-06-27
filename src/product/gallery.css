@@ -135,3 +135,79 @@ body {
   text-decoration: none;
   border: 1px solid #9DB2D2;
 }
+
+@media screen and (min-width: 1024px) {
+  /* Coloque os estilos desejados para telas ainda maiores aqui */
+  .menu {
+    display: none;
+  }
+  .container-input {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+
+  .name-marca  a {
+    font-size: 24px;
+  }
+
+  .bag {
+    display: flex;
+    width: 10%;
+  }
+
+  .bag a {
+    display: flex;
+    color: white;
+    margin: 0 1em;
+    font-family: var(--font-oficial);
+    font-size: 16px;
+  }
+
+  .container-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0 0.5em 0;
+  }
+
+  .container-input-nav {
+    display: flex;
+    border: solid 1px #252525;
+    box-shadow: rgba(102, 102, 102, 0.24) 0px 3px 8px;
+    width: 30%;
+    padding: 2px 0;
+  }
+
+  #input-container {
+  background-color: var(--cor-preto-secundario);
+  outline: none;
+  width: 90%;
+  padding: 0 0.5em;
+  color: white;
+  }
+
+  .control-search-nav {
+    width: 100%;
+  }
+
+    /* gallery */
+  body :not(header) :not(footer) {
+    display: flex;
+  }
+
+  #gallery, #info {
+    width: 45%;
+    margin: none;
+  }
+
+.container-gallery {
+display: flex;
+width: 100%;
+flex-direction: column;
+}
+
+.card {
+  width: 100%;
+}
+}
