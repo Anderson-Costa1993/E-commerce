@@ -172,7 +172,7 @@ export function CartView(cartViewOptions: CartViewOptions) {
         <div class="empty-cart">
         <h1><strong>sua sacola esta vazia...</strong></h1>
         <p>Que tal aproveitar nossas ofertas especiais?</p>
-        <span> <a href="index.html">Clique aqui e aproveite nossas ofertas</a></span>
+        <span> <a href="/index.html">Clique aqui e aproveite nossas ofertas</a></span>
         </div>
       `;
     }
@@ -230,7 +230,7 @@ export function CartView(cartViewOptions: CartViewOptions) {
     </div>
   </div>
   <button class="btn-buy">Finalizar compra</button>
-  <button class="btn-home"> <a href="index.html"> Continuar comprando</a></button>
+  <button class="btn-home"> <a href="/index.html"> Continuar comprando</a></button>
     `;
     addEvents();
   }

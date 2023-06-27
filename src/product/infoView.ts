@@ -10,8 +10,6 @@ type InfoViewOptions = {
   element: HTMLElement;
 };
 
-
-
 export function InfoView(infoViewOptions: InfoViewOptions) {
   const { product, variant, element } = infoViewOptions;
 
