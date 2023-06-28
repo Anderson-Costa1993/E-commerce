@@ -120,24 +120,22 @@ export function CartView(cartViewOptions: CartViewOptions) {
         const variantId = cartItem.variantId
         const variantDiscount = cartViewOptions.stock.getProducDiscount(cartItem.id, cartItem.variantId);
         cartViewOptions.element.innerHTML += `
-    <div class="card" data-productId="${cartItem.id}" data-variantId="${cartItem.variantId}">
+    <div class="card container-cart-product" data-productId="${cartItem.id}" data-variantId="${cartItem.variantId}">
       <div class="container-product">
       <div class="img-product">
         <img src="images/products/${ cartItem.imagem }" alt="" class="image">
       </div>
       <div class="product-information">
-
         <div class="card container-del" data-productId="${cartItem.id}" data-variantId="${cartItem.variantId}">
           <span class="marca">${ cartItem.marca }</span>
           <button class="remove">
             <i class="bi bi-trash3" style="font-size: 18px; color:black" ></i>
           </button>
         </div>
-
         <span class="product-name-model">${ cartItem.name }  ${cartItem.model}</span>
-        <span class="parceiro">vendido e entrgue por <a href="">parceiro</a>
-        </span>
-
+        <span class="product-color-cart">Cor: ${ cartItem.color }</span>
+        <span class="product-color-cart">Tamanho:<strong> ${ cartItem.size } </strong></span>
+        <span class="parceiro">vendido e entrgue por <a href=""><strong>parceiro</strong></a></span>
       </div>
     </div>
 
@@ -167,6 +165,7 @@ export function CartView(cartViewOptions: CartViewOptions) {
   </div>
         `;
       });
+
     } else {
       cartViewOptions.element.innerHTML += `
         <div class="empty-cart">
@@ -195,6 +194,8 @@ export function CartView(cartViewOptions: CartViewOptions) {
     </div>
     </div>
 
+
+<div class="cupom-resume">
   <div class="cumpons">
     <div class="title-voucher">
       <span class="title-cupom">Cumpons e vales</span>
@@ -229,8 +230,28 @@ export function CartView(cartViewOptions: CartViewOptions) {
       <span  class="total-value"> <strong>R$ ${cartViewOptions.cart.getAmount().toFixed(2)}</strong></span>
     </div>
   </div>
+  <div class="btns">
   <button class="btn-buy">Finalizar compra</button>
   <button class="btn-home"> <a href="/index.html"> Continuar comprando</a></button>
+  </div>
+  </div>
+
+
+
+  <div class="replacement-desktop">
+    <span class="icon-troca">
+      <i class="bi bi-box-seam" style="font-size: 18px; color:black" ></i>
+    </span>
+
+    <div class="descrition">
+      <p class="title-troca">
+        Troca e devolução facil
+      </p>
+      <p class="text-troca">
+        Não se preocupe se quiser trocar, pois a troca é gratuita e pode ser feita em até 30 dias após a sua compra. Caso precise devolver algum produto, o dinheiro será restituído.
+      </p>
+    </div>
+  </div>
     `;
     addEvents();
   }

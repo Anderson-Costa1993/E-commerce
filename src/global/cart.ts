@@ -45,6 +45,7 @@ export function Cart(cartOptions: CartOptions) {
       throw new Error(`Product with id ${productId} and variant id ${variantId} not found`);
     }
 
+
     const cartProduct = findCartProduct({ productId, variantId });
 
     if (cartProduct) {
@@ -58,6 +59,11 @@ export function Cart(cartOptions: CartOptions) {
     } else {
 
     const { product, variant } = findedProduct;
+
+    if (quantity > variant.quantity) {
+      alert("Produto esgotado")
+      throw new Error(`Product with id ${productId} and variant id ${variantId} has only ${variant.quantity} quantity`);
+    }
 
     cartItems.push({
       id: product.id,
@@ -104,6 +110,7 @@ export function Cart(cartOptions: CartOptions) {
     }
 
     if (quantity > variant.quantity) {
+      alert("Produto esgotado")
       throw new Error(`Product with id ${productId} and variant id ${variantId} has only ${variant.quantity} quantity`);
     }
 

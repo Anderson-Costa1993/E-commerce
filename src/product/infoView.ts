@@ -46,8 +46,8 @@ export function InfoView(infoViewOptions: InfoViewOptions) {
   <div class = "card" data-productId="${product.id} data-productId="${variant.id}">
   <div class="Product-Data">
     <span class="marca">${product.marca}</span>
-    <Span class="Model">${product.model} <strong>${product.color}</strong> </Span>
-    <span class="parceiro">vendido e entrgue <a href="">Parceiro</a></span>
+    <Span class="Model">${product.model} <strong>${ product.color}</strong></Span>
+    <span class="parceiro">vendido e entrgue:<a href="">Parceiro</a></span>
   </div>
 
   <div class="container-select-color">
@@ -104,6 +104,7 @@ ${
   <a class="btn-buy" style="text-decoration: none; color: #f3f4f6;" href="/cart.html?productId=${product.id} &variantId=${
       variant.id
     }">Comprar</a>
+
 
 </div>
     `;

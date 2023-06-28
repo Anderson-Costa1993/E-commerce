@@ -38,9 +38,9 @@ body {
 
 .container-input {
   display: flex;
-  margin: 2em 0;
+  margin: 2em 0 1em 0;
   justify-content: center;
-  border: solid 1px #DBDEE6;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .control-search {
@@ -51,10 +51,9 @@ body {
 
 #input-container {
   border: none;
-  background-color: #ffffff;
   outline: none;
   width: 95%;
-  padding: 0.5em;
+  text-align: center
   ;
 }
 
@@ -66,7 +65,7 @@ body {
   color: #f3f4f6;
 }
 
-.bag a {
+.enter-user {
   display: none;
 }
 
@@ -95,6 +94,7 @@ body {
     margin: 0 1em;
     font-family: var(--font-oficial);
     font-size: 16px;
+    text-decoration: none;
   }
 
   .container-nav {
@@ -108,7 +108,7 @@ body {
     border: solid 1px #252525;
     box-shadow: rgba(102, 102, 102, 0.24) 0px 3px 8px;
     width: 30%;
-    padding: 2px 0;
+    border-radius: 4px;
   }
 
   #input-container {
@@ -117,6 +117,7 @@ body {
   width: 90%;
   padding: 0 0.5em;
   color: white;
+  text-align: center;
   }
 
   .control-search-nav {

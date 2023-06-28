@@ -4,6 +4,7 @@ footer {
   margin-top: 5em;
   font-weight: 600;
   border-top: solid 1px #ABB2C4;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   font-family: var(--font-oficial);
 }
 
@@ -36,3 +37,24 @@ footer {
   font-size: 12px;
 }
 
+@media screen and (min-width: 1024px) {
+  .icon-social a {
+    text-decoration: none;
+  }
+
+  footer .nav-social {
+    padding: 1.5em 10em;
+  }
+
+  .app-android a  {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .direitos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
