@@ -1,5 +1,9 @@
 @import '/src/global/style.css';
 
+body {
+  height: 100vh;
+}
+
 #stock {
   display: flex;
   justify-content: space-around;
@@ -20,7 +24,7 @@
 }
 
 .img-exposicion {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border: solid 1px #c7c7c7;
   border-radius: 5px;
   width: 100%;
   height: 150px;
