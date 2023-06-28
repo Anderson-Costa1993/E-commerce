@@ -216,6 +216,11 @@ body .container-input-nav {
     align-items: center;
   }
 
+  body a:hover {
+    text-decoration: none;
+
+  }
+
       /* gallery */
       body :not(header):not(footer) {
         display: flex ;
@@ -224,7 +229,7 @@ body .container-input-nav {
 
       #gallery {
         width: 40%;
-        margin: 2em;
+        margin: 3em 2em;
         box-sizing: border-box;
       }
 
@@ -234,7 +239,7 @@ body .container-input-nav {
 
       #info {
         width: 40%;
-        margin: 2em;
+        margin: 3em 2em;
       }
 
     .selecions {
