@@ -146,6 +146,10 @@ body {
   text-decoration: none;
   border: 1px solid #9DB2D2;
 }
+
+#info {
+  margin-bottom: 10em;
+}
 .enter-user {
   display: none;
 }
