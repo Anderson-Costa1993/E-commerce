@@ -170,7 +170,7 @@ export function Stock() {
           quantity: 10,
           price: 150,
           discount: 0.20,
-          discountName: "0%",
+          discountName: "20%",
           amount: 0,
         },
         {
